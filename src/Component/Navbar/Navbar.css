@@ -1,0 +1,81 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 36px 0 36px;
+}
+
+.logoNav img {
+  cursor: pointer;
+}
+
+.profileNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnNav {
+  color: gray;
+  background-color: white;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+
+.btnLogin {
+  cursor: pointer;
+  min-width: 70px;
+  min-height: 35px;
+  background-color: rgb(76, 209, 73);
+  color: azure;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btnRegister {
+  cursor: pointer;
+  min-width: 70px;
+  min-height: 35px;
+  background-color: rgb(216, 250, 215);
+  color: rgb(76, 209, 73);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.imgNav {
+  width: 40px;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+  }
+}
