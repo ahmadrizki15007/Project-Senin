@@ -1,22 +1,46 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../../assets/logo/logo.png";
-import Profile from "../../assets/profile/profile.png";
+import DefaultAvatar from "../../assets/profile/profile.png";
 
-export default function Navbar({ hideSecond }) {
+export default function Navbar({ user, onLogout }) {
   return (
-    <nav>
+    <nav className="navbar">
       <div className="logoNav">
-        <img src={Logo} alt="logo" />
+        <Link to="/">
+          <img src={Logo} alt="logo" />
+        </Link>
       </div>
-      {!hideSecond && (
-        <div className="profileNav">
-          <button className="btnNav">Kategori </button>
-          <img className="imgNav" src={Profile} alt="profile" />
-          <button className="btnLogin">Login</button>
-          <button className="btnRegister">Register</button>
-        </div>
-      )}
+
+      <div className="profileNav">
+        {user ? (
+          <>
+            <button className="btnNav">Kategori</button>
+            <img
+              className="imgNav"
+              src={user.profilePic || DefaultAvatar}
+              alt="User Profile"
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = DefaultAvatar;
+              }}
+            />
+            <button className="btnLogout" onClick={onLogout}>
+              Logout
+            </button>
+          </>
+        ) : (
+          <>
+            <Link to="/login">
+              <button className="btnLogin">Login</button>
+            </Link>
+            <Link to="/register">
+              <button className="btnRegister">Register</button>
+            </Link>
+          </>
+        )}
+      </div>
     </nav>
   );
 }

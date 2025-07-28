@@ -1,0 +1,223 @@
+.banner2 {
+  background-image: url("../../assets/img/Aset8.png");
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  padding: 62px 140px 42px 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 12px;
+  width: 100%;
+  height: fit-content;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.banner2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.banner2wrapper {
+  padding: 50px 0 50px 0;
+  width: 40%;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.newsLetter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.newsLetterTittle {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.newsLetterContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+}
+
+.newsCetterContent h3 {
+  font-size: 2em;
+}
+
+.newsLetterContent p {
+  font-size: medium;
+  font-weight: lighter;
+}
+.subscribeWrapper {
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 50px;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.subscribeWrapper input {
+  all: unset;
+  color: black;
+  font: inherit;
+}
+
+#btnSubscribe {
+  cursor: pointer;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(255, 200, 62);
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+  .banner2 {
+    background-image: url("../../assets/img/Aset8.png");
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 12px;
+    width: 400px;
+    height: fit-content;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+
+  .banner2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+
+  .banner2wrapper {
+    padding: 20px 0 20px 0;
+    width: 80%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .newsLetter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .newsLetterTittle {
+    font-size: medium;
+    font-weight: lighter;
+  }
+
+  .newsLetterContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .newsCetterContent h3 {
+    font-size: 2em;
+  }
+
+  .newsLetterContent p {
+    font-size: medium;
+    font-weight: lighter;
+  }
+  .subscribeWrapper {
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
+  .subscribeWrapper input {
+    all: unset;
+    color: black;
+    font: inherit;
+  }
+
+  #btnSubscribe {
+    cursor: pointer;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 200, 62);
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+}
